@@ -18,9 +18,9 @@ app.use(routes);
 // Connect to the Mongo DB
 //mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",  { useNewUrlParser: true });
 mongoose
-     .connect("mongodb://localhost/reactreadinglist", {
+     //.connect("mongodb://localhost/reactreadinglist", {
       // >>>>>>>  connect the following (and comment above) for deployment:
-  //.connect(process.env.MONGODB_URI, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
