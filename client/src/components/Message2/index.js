@@ -2,24 +2,24 @@ import React, { Component } from "react";
 import "./style.css";
 
 
-class Message extends Component {
+class Message2 extends Component {
 
     constructor() {
         super()
         this.state = {
-            message: 'Welcome visitor'
+            message2: 'How are you?'
         }
     }
 
 
     changeMessage() {
-        if (this.state.message == 'Welcome visitor') {
+        if (this.state.message2 == 'How are you?') {
             this.setState({
-                message: 'Thank you for subscribing'
+                message2: 'Fine thank you!'
             })
         } else {
             this.setState({
-                message: 'Welcome visitor'
+                message2: 'How are you?'
             })
         }
 
@@ -28,12 +28,12 @@ class Message extends Component {
     render() {
         return (
         <div>
-            <h1>{this.state.message}</h1>
-            <button onClick={() => this.changeMessage()}> Subscribe</button>
+            <h1>{this.state.message2}</h1>
+            <button onClick={() => this.changeMessage()}>I'm good.</button>
         </div>
         )
     }
 }
 
 
-export default Message;
+export default Message2;
